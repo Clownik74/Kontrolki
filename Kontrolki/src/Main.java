@@ -24,14 +24,11 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                // pobieramy tekst z pola wieku:
                 String txt = poleWieku.getText();
-                int wiek = Integer.parseInt(txt);   // tu w ćwiczeniu nie łapiemy błędów
+                int wiek = Integer.parseInt(txt);  
 
-                // sprawdzamy checkbox:
                 boolean regulaminOK = checkbox.isSelected();
 
-                // logika:
                 if(wiek == 18 && regulaminOK){
                     JOptionPane.showMessageDialog(frame, "Rejestracja pomyślna!");
                 } else {
